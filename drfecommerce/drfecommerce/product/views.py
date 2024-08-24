@@ -12,4 +12,3 @@ class CategoryViewSet(viewsets.ViewSet):
     def list(self, request):
         serializer = CategorySerializer(self.queryset, many=True)
         return Response(serializer.data)
-    
